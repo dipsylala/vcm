@@ -262,8 +262,6 @@ def dirb():
                 dirb_filename = os.path.join(project_config.local_folder, 'artifacts',
                                              'dirb_' + str(project_config.targets.index(t))) + '.txt'
                 args = ["dirb", t, '-o', dirb_filename]
-
-                print args
                 call(args)
             except Exception as ex:
                 print "Error writing dirb output to: %s" % (dirb_filename, ex.strerror)
