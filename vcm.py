@@ -23,7 +23,7 @@ global_settings = None
 
 class VcmGlobalConfig:
 
-    open_ssl_binary = 'openssl'  # default - can be overridden in global config file.
+    open_ssl_binary = '/usr/bin/openssl'  # default - can be overridden in global config file.
 
     def __init__(self):
         pass
